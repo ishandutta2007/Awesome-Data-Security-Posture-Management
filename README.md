@@ -59,7 +59,7 @@ The table below lists top commercial SaaS DSPM platforms, sorted descending by *
 
 ## 🔓 Open-Source GitHub Projects
 
-Below is a list of top open-source projects for cloud security posture, PII data classification, vulnerability scanning, and data governance, sorted descending by **GitHub Stars_Count**.
+Below is a list of top open-source projects for cloud security posture, PII data classification, vulnerability scanning, and data governance, sorted descending by **GitHub_Stars_Count**.
 
 1. 🦊 **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub_Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
    - **Category**: Enterprise SIEM, HIDS & Data Security Monitoring
