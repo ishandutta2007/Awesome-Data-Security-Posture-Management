@@ -59,49 +59,49 @@ The table below lists top commercial SaaS DSPM platforms, sorted descending by *
 
 ## 🔓 Open-Source GitHub Projects
 
-Below is a list of top open-source projects for cloud security posture, PII data classification, vulnerability scanning, and data governance, sorted descending by **GitHub Star Count**.
+Below is a list of top open-source projects for cloud security posture, PII data classification, vulnerability scanning, and data governance, sorted descending by **GitHub Stars_Count**.
 
-1. 🦊 **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+1. 🦊 **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub_Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
    - **Category**: Enterprise SIEM, HIDS & Data Security Monitoring
    - **Description**: Free, open-source enterprise SIEM and security monitoring platform. Provides file integrity monitoring, sensitive data exposure checks, and compliance auditing for GDPR, PCI DSS, HIPAA, and CMMC.
 
-2. 🌐 **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** [![GitHub stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers)
+2. 🌐 **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** [![GitHub_Stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers)
    - **Category**: Open Data Governance & Metadata Catalog
    - **Description**: Comprehensive open-source data governance platform featuring automated PII sensitive data classification, column-level data lineage, access control policies, and data discovery across multi-cloud databases.
 
-3. 🦉 **[Prowler](https://github.com/prowler-cloud/prowler)** [![GitHub stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
+3. 🦉 **[Prowler](https://github.com/prowler-cloud/prowler)** [![GitHub_Stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
    - **Category**: Multi-Cloud Security Posture & Compliance Framework
    - **Description**: The most widely used open-source cloud security posture assessment tool (Apache-2.0). Features **800+ security checks** across AWS, Azure, GCP, Kubernetes, M365, and GitHub, supporting CIS, NIST, PCI DSS, and DORA frameworks.
 
-4. 🛡️ **[Microsoft Presidio](https://github.com/microsoft/presidio)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/presidio?style=social&color=white)](https://github.com/microsoft/presidio/stargazers)
+4. 🛡️ **[Microsoft Presidio](https://github.com/microsoft/presidio)** [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/presidio?style=social&color=white)](https://github.com/microsoft/presidio/stargazers)
    - **Category**: PII Data Discovery, Anonymization & Protection Engine
    - **Description**: Open-source SDK developed by Microsoft for context-aware identification, classification, and anonymization of Personally Identifiable Information (PII) in structured and unstructured text.
 
-5. 🔎 **[Checkov](https://github.com/bridgecrewio/checkov)** [![GitHub stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white)](https://github.com/bridgecrewio/checkov/stargazers)
+5. 🔎 **[Checkov](https://github.com/bridgecrewio/checkov)** [![GitHub_Stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white)](https://github.com/bridgecrewio/checkov/stargazers)
    - **Category**: IaC Security & Cloud Posture Static Analysis
    - **Description**: Open-source static code analysis tool for infrastructure-as-code (Terraform, CloudFormation, Kubernetes, Helm). Scans for cloud data store misconfigurations and unencrypted sensitive data targets.
 
-6. ☁️ **[Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian)** [![GitHub stars](https://img.shields.io/github/stars/cloud-custodian/cloud-custodian?style=social&color=white)](https://github.com/cloud-custodian/cloud-custodian/stargazers)
+6. ☁️ **[Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian)** [![GitHub_Stars](https://img.shields.io/github/stars/cloud-custodian/cloud-custodian?style=social&color=white)](https://github.com/cloud-custodian/cloud-custodian/stargazers)
    - **Category**: CNCF Cloud Posture Rules Engine & Governance
    - **Description**: CNCF open-source stateless rules engine for cloud security and governance. Enables real-time enforcement of cloud data storage encryption, public bucket exposure prevention, and access policies.
 
-7. 🏹 **[Apache Ranger](https://github.com/apache/ranger)** [![GitHub stars](https://img.shields.io/github/stars/apache/ranger?style=social&color=white)](https://github.com/apache/ranger/stargazers)
+7. 🏹 **[Apache Ranger](https://github.com/apache/ranger)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/ranger?style=social&color=white)](https://github.com/apache/ranger/stargazers)
    - **Category**: Centralized Data Access Control & Auditing
    - **Description**: Open-source framework to enable, monitor, and manage comprehensive data security across enterprise data lakes. Provides fine-grained access control policies at file, folder, table, and column levels.
 
-8. 📋 **[cnspec](https://github.com/mondoohq/cnspec)** [![GitHub stars](https://img.shields.io/github/stars/mondoohq/cnspec-policies?style=social&color=white)](https://github.com/mondoohq/cnspec-policies/stargazers)
+8. 📋 **[cnspec](https://github.com/mondoohq/cnspec)** [![GitHub_Stars](https://img.shields.io/github/stars/mondoohq/cnspec-policies?style=social&color=white)](https://github.com/mondoohq/cnspec-policies/stargazers)
    - **Category**: Cross-Cloud Policy & Security Checker
    - **Description**: Open-source security and policy checker built on a security data mesh. Evaluates data security posture and misconfigurations across cloud platforms, Kubernetes clusters, endpoints, and container images.
 
-9. 🕵️ **[OpenKAT](https://github.com/minvws/nl-kat-coordination)** [![GitHub stars](https://img.shields.io/github/stars/minvws/nl-kat-coordination?style=social&color=white)](https://github.com/minvws/nl-kat-coordination/stargazers)
+9. 🕵️ **[OpenKAT](https://github.com/minvws/nl-kat-coordination)** [![GitHub_Stars](https://img.shields.io/github/stars/minvws/nl-kat-coordination?style=social&color=white)](https://github.com/minvws/nl-kat-coordination/stargazers)
    - **Category**: Vulnerability Analysis & Asset Monitoring
    - **Description**: Government-backed open-source vulnerability scanning engine developed by the Dutch Ministry of Health. Integrates 50+ security tools with bitemporal historical audit storage and forensic guarantees.
 
-10. 📄 **[Meta Automated Sensitive Document Classification](https://github.com/facebook/automated-sensitive-document-classification)** [![GitHub stars](https://img.shields.io/github/stars/facebook/automated-sensitive-document-classification?style=social&color=white)](https://github.com/facebook/automated-sensitive-document-classification/stargazers)
+10. 📄 **[Meta Automated Sensitive Document Classification](https://github.com/facebook/automated-sensitive-document-classification)** [![GitHub_Stars](https://img.shields.io/github/stars/facebook/automated-sensitive-document-classification?style=social&color=white)](https://github.com/facebook/automated-sensitive-document-classification/stargazers)
     - **Category**: LLM-Powered AI Data Leak Prevention (DLP)
     - **Description**: Meta's open-source AI data classification tool using LLMs (Llama) to automatically scan, classify, and label sensitive documents across cloud storage integrations (Google Drive API, Office 365).
 
-11. 🐗 **[data-boar](https://github.com/fabioleitao/data-boar)** [![GitHub stars](https://img.shields.io/github/stars/fabioleitao/data-boar?style=social&color=white)](https://github.com/fabioleitao/data-boar/stargazers)
+11. 🐗 **[data-boar](https://github.com/fabioleitao/data-boar)** [![GitHub_Stars](https://img.shields.io/github/stars/fabioleitao/data-boar?style=social&color=white)](https://github.com/fabioleitao/data-boar/stargazers)
     - **Category**: Metadata-Only Sensitive Data Scanner
     - **Description**: Compliance-aware personal data discovery tool for GDPR, LGPD, and CCPA. Scans files, SQL, NoSQL, and SharePoint repositories without storing or copying underlying PII data payloads.
 
@@ -113,7 +113,7 @@ Contributions are warmly welcomed! Help make Data Security Posture Management mo
 
 1. **Fork** this repository.
 2. Add or update entries in `README.md` following the standard table/list format.
-3. Ensure vendor pricing, free trial parameters, and star badges remain factual and up-to-date.
+3. Ensure vendor pricing, free trial parameters, and Stars_Badges remain factual and up-to-date.
 4. Submit a **Pull Request** with a descriptive summary of changes.
 
 ---
