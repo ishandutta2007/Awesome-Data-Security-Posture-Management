@@ -1,227 +1,141 @@
-# Awesome-Data-Security-Posture-Management
-
-## Top Data Security Posture Management (DSPM) Platforms Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Sensitive Data Discovery, Classification, Access Governance & Data Risk Prioritization*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Data Security Posture Management (DSPM)**. These tools help security teams discover and classify sensitive data, identify excessive access, detect data leakage risks, and continuously monitor data security posture across cloud environments.
-
-
-
-**Examples** include Cyera, BigID, Varonis, Sentra, Laminar, Rubrik DSPM, Normalyze, Securiti, Dig Security, Wiz DSPM, Microsoft Purview DSPM, Symmetry Systems, and Concentric AI (the category leaders).
-
-
-
-**Open-source emphasis**: DSPM is a **commercially dominated category**—Cyera, BigID, and Varonis lead the market. However, the **open-source foundation is maturing rapidly**, particularly for **cloud security posture** and **data discovery/classification**. **Prowler** provides 800+ security checks across AWS, Azure, GCP, and Kubernetes with compliance frameworks . **OpenKAT** is a mature, government-backed vulnerability analysis tool integrating 50+ security scanners . **cnspec** delivers cross-cloud policy checks for cloud, Kubernetes, APIs, and endpoints . **data-boar** focuses on personal and sensitive data discovery with compliance-aware scanning for LGPD, GDPR, and CCPA . **Meta's Automated Sensitive Document Classification** uses LLMs to automatically classify and label sensitive documents . This section documents these production-grade and emerging solutions.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Cyera](https://www.cyera.com/)**
-
-  AI-powered DSPM leader. Automatically discovers, classifies, and protects sensitive data across multi-cloud environments, with data risk prioritization and access governance.
-
-
-
-- **[BigID](https://bigid.com/)**
-
-  Data intelligence platform focused on data discovery, classification, and privacy compliance. Provides sensitive data discovery, access intelligence, and risk monitoring for GDPR, CCPA, and more.
-
-
-
-- **[Varonis](https://www.varonis.com/)**
-
-  Data security platform focused on data access governance and threat detection. Analyzes file activity, permissions, and user behavior to detect insider threats, ransomware, and data exfiltration.
-
-
-
-- **[Sentra](https://www.sentra.io/)**
-
-  Cloud-native DSPM platform focused on **Data Detection & Response (DDR)** and **Data Access Governance (DAG)**. Provides automated data discovery, classification, risk prioritization, and remediation across IaaS, PaaS, SaaS, and on-premises environments . Supports 20+ prebuilt or custom integrations including Datadog and Trellix, serving finance, healthcare, and retail industries .
-
-
-
-- **[Laminar (Rubrik)](https://www.rubrik.com/)**
-
-  Cloud data security platform (acquired by Rubrik in 2023) focused on DSPM. Provides cloud data discovery and classification, data risk prioritization, cloud data protection, and continuous data monitoring . Key metrics include data classification accuracy (false positive rate), cloud storage cost reduction (by eliminating shadow data), and scan time .
-
-
-
-- **[Securiti](https://securiti.ai/)**
-
-  Unified Data + AI Security platform, ranked #1 in GigaOm's DSPM Radar for three consecutive years . The **DataAI Command Graph** provides centralized insight across data security, access governance, compliance, AI security, ROT data reduction, and breach management . **Classification Tuning Agent** automatically adjusts classification models without re-scanning data. Supports **LLM Firewall** to protect AI systems by monitoring prompts, data retrieval, and responses . Named a Customers' Choice for DSPM in Gartner Peer Insights .
-
-
-
-- **[Normalyze](https://normalyze.com/)**
-
-  DSPM platform focused on cloud data security and compliance. Provides data discovery, classification, access analysis, and risk prioritization.
-
-
-
-- **[Dig Security](https://www.dig.security/)**
-
-  Cloud data security platform (acquired by Palo Alto Networks). Provides DSPM and DDR capabilities protecting data across cloud environments.
-
-
-
-- **[Wiz DSPM](https://www.wiz.io/)**
-
-  Data security module within Wiz's CNAPP platform. Correlates data context through the Security Graph, identifying sensitive data exposure and excessive access.
-
-
-
-- **[Microsoft Purview DSPM](https://www.microsoft.com/en-us/security/business/microsoft-purview)**
-
-  Data security posture management capabilities within Microsoft Purview. Provides sensitive data discovery, classification, and risk monitoring across Microsoft 365, Azure, and third-party data sources.
-
-
-
-- **[Symmetry Systems](https://symmetry-systems.com/)**
-
-  Data security platform focused on data access governance and DSPM. Provides data discovery, classification, and permission analysis.
-
-
-
-- **[Concentric AI](https://concentric.ai/)**
-
-  AI-powered data security platform focused on unstructured data discovery, classification, and protection. Provides semantic understanding to automatically identify sensitive content.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Cloud Security & Compliance Platforms
-
-
-
-- **[Prowler](https://github.com/prowler-cloud/prowler)**
-
-  **The most widely used open-source cloud security posture and compliance platform.** **Apache-2.0 licensed**. Provides **800+ security checks** across **AWS, Azure, GCP, Kubernetes, Microsoft 365, GitHub, Okta, Alibaba Cloud, Cloudflare**, and more . **Compliance frameworks**: CIS, NIST, PCI DSS, HIPAA, GDPR, ISO 27001, SOC 2, and DORA . **Attack Paths** feature enables visualization of attack vectors based on actual exploitability. **Lighthouse AI** provides agentic cloud defense with natural language remediation driven by GPT models. **Key capabilities**: Automated security assessments; multi-cloud support; custom check development; HTML, JSON, CSV, and JUnit output; integration with AWS Security Hub, Azure Defender, and GCP Security Command Center .
-
-
-
-- **[OpenKAT](https://github.com/minvws/nl-kat-coordination)**
-
-  **Mature open-source vulnerability analysis tool developed by the Dutch Ministry of Health (MinVWS).** Originally built to secure COVID-19 systems and now widely used . **Core capability**: Scans networks, analyzes vulnerabilities, and generates accessible reports; **integrates 50+ high-quality scanning tools** into a modular framework; queries external databases and combines information into **facts with forensic guarantees** . **Key features**: Multi-tenancy (fully isolated organizations); scalable to hundreds of organizations with 20k+ assets each; **bitemporal storage** (view historical state of networks); **forensic guarantees** (timestamps on operations and results); business rules based on own policies; API connections . **Deployment**: Free, open-source, self-hosted. Governed by the **Stichting LibreKAT Foundation** .
-
-
-
-- **[cnspec](https://github.com/mondoohq/cnspec)**
-
-  **Open-source security and policy checker across cloud, containers, APIs, and endpoints.** Finds vulnerabilities and misconfigurations across public and private cloud environments, Kubernetes clusters, containers, container registries, servers, endpoints, SaaS products, infrastructure-as-code, and APIs . **Scan targets**: AWS, Google Cloud, Azure, Kubernetes, container images, Linux/macOS/Windows endpoints, Microsoft 365, Atlassian, Okta, Terraform HCL, GitHub/GitLab, IoT/OPC-UA devices, VMware, and more . Policy-as-code engine based on a **security data mesh**. Default policies work out of the box and are extendable and customizable .
-
-
-
-### Data Discovery & Classification
-
-
-
-- **[data-boar](https://socket.dev/pypi/package/data-boar)**
-
-  **Compliance-aware personal and sensitive data discovery and mapping tool (LGPD, GDPR, CCPA, and configurable frameworks).** **Core design**: Ingests from multiple sources (files, SQL, NoSQL, APIs, Power BI, Dataverse, SharePoint, SMB/NFS) **without storing or leaking PII — only metadata** (where it was found, pattern type, sensitivity), providing actionable visibility without data movement . **Framework support**: Baseline patterns cover LGPD, GDPR, CCPA, GLBA; example configurations extend to UK GDPR, EU GDPR, PIPEDA, POPIA, APPI, PCI-DSS, US healthcare vocabularies, and more . **Outputs**: Excel reports, heatmaps, cross-session trends; API allows scheduled scans . **Security features**: Validation, headers, auditing; in-archive scanning (zip, tar, gz, 7z); content-type detection to identify renamed files; early encryption/transport visibility (TLS vs plaintext). **Deployment**: Docker Hub image `fabioleitao/data_boar` .
-
-
-
-- **[Meta Automated Sensitive Document Classification](https://github.com/facebook/automated-sensitive-document-classification)**
-
-  **Meta's open-source AI data leak prevention tool using LLMs to automatically classify and label sensitive documents.** **Core innovation**: Unlike traditional rule-based or RegEx approaches, uses **Large Language Model (LLM) technology** as the core engine for higher accuracy and extensibility . **Features**: Identifies sensitive content and automatically adds labels; integrates directly with Google Docs, Sheets, and Slides via Google Drive API; supports Apache Tika for document text parsing; records classification results, MD5 checksums, and processing status in SQLite database, exporting CSV reports for auditing . **Customization**: Supports multi-level classification policies configurable to enterprise security policies . **Deployment**: Docker container or Python module, local or cloud . **Native support**: Llama models and Google Drive integration; future plans for Office 365 sensitivity labels and local inference platforms like Ollama .
-
-
-
-### Data Governance & Access Control
-
-
-
-- **[Apache Ranger](https://github.com/apache/ranger)**
-
-  **Open-source data security framework providing centralized access control and auditing.** **Core capabilities**: Enable, monitor, and manage comprehensive data security across Hadoop ecosystem and beyond; **centralized security administration with access control and auditing** . **Access policies**: Support rule definitions at file, folder, database, table, and column levels; policies can be defined per user, role, or group . **Auditing**: Centralized user access and administrative action auditing, compatible with Elasticsearch and Solr audit stores . **Integration**: Widely accepted across AWS, Azure, GCP, and major cloud providers . **Use cases**: Data access governance and compliance auditing for big data platforms .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Cloud Security & Compliance**: **Prowler** (800+ checks, multi-cloud), **OpenKAT** (Dutch Ministry of Health, 50+ scanners), **cnspec** (cross-cloud policy checks) .
-
-- **Data Discovery & Classification**: **data-boar** (compliance-aware, metadata only), **Meta Sensitive Document Classification** (LLM-powered, auto-labeling) .
-
-- **Data Governance**: **Apache Ranger** (centralized access control and auditing) .
-
-- **SIEM/HIDS**: **Wazuh** (HIDS/SIEM with data security monitoring and compliance checks for CMMC, GDPR, PCI DSS, HIPAA) .
-
-
-
-**Frameworks for building custom systems**: Combine **Prowler** or **cnspec** for cloud security posture and compliance checks, **OpenKAT** for vulnerability analysis and asset monitoring, **data-boar** or **Meta Sensitive Document Classification** for data discovery and classification, and **Apache Ranger** for data access governance. Add **PostgreSQL** for persistence and **Docker/Kubernetes** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- DSPM platforms handle sensitive cloud data and access permission information; ensure compliance with GDPR, CCPA, HIPAA, and relevant data protection regulations.
-
-- **Open-source reality**: The open-source ecosystem for DSPM is **mature at the cloud security posture layer** (**Prowler**, **cnspec**), **vulnerability analysis layer** (**OpenKAT**), and **data discovery/classification layer** (**data-boar**, **Meta Sensitive Document Classification**) . **Apache Ranger** provides a mature data access governance framework . However, **commercial platforms** (Cyera, BigID, Varonis, Securiti, Sentra) provide **AI-driven data classification precision, cross-cloud data correlation, automated remediation, and compliance reporting** that open-source alternatives require significant assembly and engineering investment to match. The open-source path is most viable for **cloud security posture, vulnerability analysis, or specific data discovery use cases**, rather than full DSPM platform replacement.
-
-
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Security-Posture-Management">
+    <img src="assets/banner.svg" alt="Awesome Data Security Posture Management (DSPM) Banner" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Security-Posture-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-Security-Posture-Management?style=for-the-badge&color=gold" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Security-Posture-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-Security-Posture-Management?style=for-the-badge&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-Security-Posture-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Data-Security-Posture-Management?style=for-the-badge&color=green" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+# 🛡️ Awesome Data Security Posture Management (DSPM)
+
+> **A curated ecosystem of commercial SaaS platforms and open-source GitHub projects for Data Security Posture Management (DSPM), Sensitive Data Discovery, PII Classification, Data Access Governance, and Data Risk Prioritization.**
 
 ---
 
+## 📌 Table of Contents
 
+- [🌐 Market Overview & Sector Analysis](#-market-overview--sector-analysis)
+- [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#-disclaimer)
 
-**Made for security engineers, data security officers, compliance teams, and cloud security architects.**
+---
 
-Let's make data security posture management more open, transparent, and actionable.
+## 🌐 Market Overview & Sector Analysis
+
+The global **Data Security Posture Management (DSPM)** market size is estimated at **$2.8 Billion in 2026** and is projected to reach **$11.5 Billion by 2032**, expanding at a **CAGR of ~26.5%**. The sector is currently **moderately fragmented**, characterized by high-growth specialized venture-backed innovators (such as Cyera, BigID, Securiti) competing against major cloud security platforms and CNAPP consolidators (including Microsoft, Palo Alto Networks, Wiz, Rubrik, and Qualys).
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+The table below lists top commercial SaaS DSPM platforms, sorted descending by **Company Size (Valuation / Revenue)**.
+
+| SaaS Platform | Description & Key Capabilities | Company Size (Valuation / Revenue) 🔽 | Starting Tier Pricing | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| 🔷 **[Microsoft Purview DSPM](https://www.microsoft.com/en-us/security/business/microsoft-purview)** | Native DSPM and data security suite across M365, Azure, and multi-cloud repositories. Provides sensitive data discovery, classification, and access risk monitoring. | **~$3.1 Trillion** (Market Cap) / **$245B+** Revenue | **$57.00/user/mo** (M365 E5) or **$0.40/10k items** + $1.00/GB scanned | **90-Day Free Trial** (includes up to 25 user licenses with full compliance & DSPM features) |
+| 🛡️ **[Dig Security (Palo Alto Networks)](https://www.dig.security/)** | Cloud data security platform providing real-time DSPM and Data Detection & Response (DDR) across multi-cloud infrastructure. | **~$110.0 Billion** (Market Cap) / **$8B+** Revenue | **$12,000.00/year** (Prisma Cloud Data Security module starting bundle) | **30-Day Free Trial** via Palo Alto Prisma Cloud platform (up to 1,000 cloud resources) |
+| ⚡ **[Wiz DSPM](https://www.wiz.io/)** | Data security module integrated into Wiz's CNAPP platform. Correlates sensitive data exposure with cloud access permissions via the Security Graph. | **$12.0 Billion** (Valuation) / **$500M+** ARR | **$18,000.00/year** ($1,500/mo base subscription for Wiz platform) | **14-Day Free Trial** (full cloud environment scan up to 500 workloads/buckets) |
+| 💾 **[Rubrik DSPM (Laminar)](https://www.rubrik.com/)** | Cloud data security platform (acquired Laminar) offering cloud data discovery, classification, risk prioritization, and shadow data elimination. | **~$7.5 Billion** (Market Cap) / **$800M+** ARR | **$15,000.00/year** base platform license on AWS Marketplace | **14-Day Free Trial** / Rubrik Data Security Risk Assessment (capped at 1 TB scanned volume) |
+| 🎯 **[Normalyze (Qualys)](https://normalyze.com/)** | Cloud data security and compliance platform (acquired by Qualys) offering automated data discovery, access graph analysis, and risk remediation. | **~$5.0 Billion** (Market Cap) / **$550M+** Revenue | **$10,000.00/year** starting standalone tier | **30-Day Free Trial** (includes automated cloud asset & data scan up to 25 accounts) |
+| 🔮 **[Cyera](https://www.cyera.com/)** | AI-powered DSPM platform leader. Automatically discovers, classifies, and secures sensitive data across multi-cloud environments with access governance. | **$3.0 Billion** (Valuation) / **$100M+** ARR | **$15,000.00/year** ($1,250/mo starter subscription on AWS Marketplace) | **14-Day Free Trial** on AWS Marketplace / 30-Day PoC (up to 500 GB sensitive data scanned) |
+| 🔐 **[Varonis](https://www.varonis.com/)** | Data security platform focused on data access governance (DAG) and automated threat detection across hybrid cloud and SaaS data stores. | **~$1.8 Billion** (Market Cap) / **$540M+** ARR | **$12,000.00/year** ($1,000/mo starter subscription tier) | **30-Day Free Trial** (includes full Data Risk Assessment audit report) |
+| 📊 **[BigID](https://bigid.com/)** | Data intelligence platform for deep data discovery, ML-driven classification, and privacy compliance (GDPR, CCPA, HIPAA). | **$1.25 Billion** (Valuation) / **$100M+** ARR | **$10,000.00/year** ($833/mo starter subscription on AWS Marketplace) | **30-Day Free Trial** (up to 5 enterprise data sources / 250 GB data scan limit) |
+| 🤖 **[Securiti](https://securiti.ai/)** | Unified Data + AI Security platform. Features DataAI Command Graph, LLM Firewall, automated classification tuning, and ROT data reduction. | **~$500 Million** (Valuation) / **$75M+** Funding | **$10,000.00/year** ($833/mo starter platform subscription) | **Free Community Edition** forever (1 data source, max 100 GB scanned) / 14-Day Enterprise Trial |
+| 🧠 **[Concentric AI](https://concentric.ai/)** | AI-powered autonomous data security platform delivering semantic understanding for unstructured data discovery and risk identification. | **~$300 Million** (Valuation) / **$67M+** Funding | **$10,000.00/year** starting platform tier | **14-Day Free Trial** (up to 3 data repositories / 100k files scanned) |
+| 🛰️ **[Sentra](https://www.sentra.io/)** | Cloud-native DSPM platform focused on Data Detection & Response (DDR) and Data Access Governance (DAG) across IaaS, PaaS, SaaS, and on-premises. | **~$250 Million** (Valuation) / **$53M+** Funding | **$12,000.00/year** starting tier on AWS/Azure Marketplace | **14-Day Free Trial** / 30-Day PoC (up to 10 cloud data stores) |
+| 🔍 **[Symmetry Systems](https://symmetry-systems.com/)** | Data security posture platform delivering hybrid cloud data object discovery, granular IAM permission mapping, and data risk visibility. | **~$150 Million** (Valuation) / **$30M+** Funding | **$12,000.00/year** base platform subscription fee | **14-Day Free Trial** (Data Security Posture Assessment trial up to 5 IAM accounts) |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Below is a list of top open-source projects for cloud security posture, PII data classification, vulnerability scanning, and data governance, sorted descending by **GitHub Star Count**.
+
+1. 🦊 **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+   - **Category**: Enterprise SIEM, HIDS & Data Security Monitoring
+   - **Description**: Free, open-source enterprise SIEM and security monitoring platform. Provides file integrity monitoring, sensitive data exposure checks, and compliance auditing for GDPR, PCI DSS, HIPAA, and CMMC.
+
+2. 🌐 **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** [![GitHub stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers)
+   - **Category**: Open Data Governance & Metadata Catalog
+   - **Description**: Comprehensive open-source data governance platform featuring automated PII sensitive data classification, column-level data lineage, access control policies, and data discovery across multi-cloud databases.
+
+3. 🦉 **[Prowler](https://github.com/prowler-cloud/prowler)** [![GitHub stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
+   - **Category**: Multi-Cloud Security Posture & Compliance Framework
+   - **Description**: The most widely used open-source cloud security posture assessment tool (Apache-2.0). Features **800+ security checks** across AWS, Azure, GCP, Kubernetes, M365, and GitHub, supporting CIS, NIST, PCI DSS, and DORA frameworks.
+
+4. 🛡️ **[Microsoft Presidio](https://github.com/microsoft/presidio)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/presidio?style=social&color=white)](https://github.com/microsoft/presidio/stargazers)
+   - **Category**: PII Data Discovery, Anonymization & Protection Engine
+   - **Description**: Open-source SDK developed by Microsoft for context-aware identification, classification, and anonymization of Personally Identifiable Information (PII) in structured and unstructured text.
+
+5. 🔎 **[Checkov](https://github.com/bridgecrewio/checkov)** [![GitHub stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white)](https://github.com/bridgecrewio/checkov/stargazers)
+   - **Category**: IaC Security & Cloud Posture Static Analysis
+   - **Description**: Open-source static code analysis tool for infrastructure-as-code (Terraform, CloudFormation, Kubernetes, Helm). Scans for cloud data store misconfigurations and unencrypted sensitive data targets.
+
+6. ☁️ **[Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian)** [![GitHub stars](https://img.shields.io/github/stars/cloud-custodian/cloud-custodian?style=social&color=white)](https://github.com/cloud-custodian/cloud-custodian/stargazers)
+   - **Category**: CNCF Cloud Posture Rules Engine & Governance
+   - **Description**: CNCF open-source stateless rules engine for cloud security and governance. Enables real-time enforcement of cloud data storage encryption, public bucket exposure prevention, and access policies.
+
+7. 🏹 **[Apache Ranger](https://github.com/apache/ranger)** [![GitHub stars](https://img.shields.io/github/stars/apache/ranger?style=social&color=white)](https://github.com/apache/ranger/stargazers)
+   - **Category**: Centralized Data Access Control & Auditing
+   - **Description**: Open-source framework to enable, monitor, and manage comprehensive data security across enterprise data lakes. Provides fine-grained access control policies at file, folder, table, and column levels.
+
+8. 📋 **[cnspec](https://github.com/mondoohq/cnspec)** [![GitHub stars](https://img.shields.io/github/stars/mondoohq/cnspec-policies?style=social&color=white)](https://github.com/mondoohq/cnspec-policies/stargazers)
+   - **Category**: Cross-Cloud Policy & Security Checker
+   - **Description**: Open-source security and policy checker built on a security data mesh. Evaluates data security posture and misconfigurations across cloud platforms, Kubernetes clusters, endpoints, and container images.
+
+9. 🕵️ **[OpenKAT](https://github.com/minvws/nl-kat-coordination)** [![GitHub stars](https://img.shields.io/github/stars/minvws/nl-kat-coordination?style=social&color=white)](https://github.com/minvws/nl-kat-coordination/stargazers)
+   - **Category**: Vulnerability Analysis & Asset Monitoring
+   - **Description**: Government-backed open-source vulnerability scanning engine developed by the Dutch Ministry of Health. Integrates 50+ security tools with bitemporal historical audit storage and forensic guarantees.
+
+10. 📄 **[Meta Automated Sensitive Document Classification](https://github.com/facebook/automated-sensitive-document-classification)** [![GitHub stars](https://img.shields.io/github/stars/facebook/automated-sensitive-document-classification?style=social&color=white)](https://github.com/facebook/automated-sensitive-document-classification/stargazers)
+    - **Category**: LLM-Powered AI Data Leak Prevention (DLP)
+    - **Description**: Meta's open-source AI data classification tool using LLMs (Llama) to automatically scan, classify, and label sensitive documents across cloud storage integrations (Google Drive API, Office 365).
+
+11. 🐗 **[data-boar](https://github.com/fabioleitao/data-boar)** [![GitHub stars](https://img.shields.io/github/stars/fabioleitao/data-boar?style=social&color=white)](https://github.com/fabioleitao/data-boar/stargazers)
+    - **Category**: Metadata-Only Sensitive Data Scanner
+    - **Description**: Compliance-aware personal data discovery tool for GDPR, LGPD, and CCPA. Scans files, SQL, NoSQL, and SharePoint repositories without storing or copying underlying PII data payloads.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help make Data Security Posture Management more transparent and accessible:
+
+1. **Fork** this repository.
+2. Add or update entries in `README.md` following the standard table/list format.
+3. Ensure vendor pricing, free trial parameters, and star badges remain factual and up-to-date.
+4. Submit a **Pull Request** with a descriptive summary of changes.
+
+---
+
+## ☕ Support & Sponsorship
+
+If you find this DSPM curated guide useful for your cloud security architecture, data governance, or compliance research, please consider supporting the project:
+
+- ⭐ **Star** this repository to increase visibility!
+- 🔀 **Fork** and share with your security engineering network.
+- 💖 **Sponsor / Buy me a Coffee**: Support ongoing open-source maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Data-Security-Posture-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Data-Security-Posture-Management&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational and informational purposes — it is not exhaustive and does not constitute an endorsement.
+- DSPM platforms process sensitive cloud data and IAM access policies; verify compliance with GDPR, CCPA, HIPAA, and internal security policies before deployment.
+- **Commercial vs. Open Source**: Commercial DSPM platforms provide turnkey AI precision, cross-cloud entity correlation, and automated remediation. Open-source solutions provide robust building blocks for cloud security posture (Prowler), data governance (OpenMetadata, Apache Ranger), and PII scanning (Presidio).
