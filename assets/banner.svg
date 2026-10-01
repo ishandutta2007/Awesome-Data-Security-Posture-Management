@@ -1,37 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="auto">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Dark Cyber Gradient -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0a0e17" />
       <stop offset="50%" stop-color="#121829" />
       <stop offset="100%" stop-color="#1a102f" />
     </linearGradient>
 
-    <!-- Accent Neon Gradients -->
+    <!-- Cyan Neon Accent Gradient -->
     <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f2fe" />
       <stop offset="100%" stop-color="#4facfe" />
     </linearGradient>
 
+    <!-- Purple Accent Gradient -->
     <linearGradient id="purple-glow" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#7f00ff" />
       <stop offset="100%" stop-color="#e100ff" />
     </linearGradient>
 
+    <!-- Shield Fill Gradient -->
     <linearGradient id="shield-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#7f00ff" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#7f00ff" stop-opacity="0.25" />
     </linearGradient>
 
-    <!-- Filter for Neon Glow -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
+    <!-- Subtle Glow Filter -->
     <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge>
@@ -41,114 +35,92 @@
     </filter>
   </defs>
 
-  <style>
-    @keyframes scan-beam {
-      0% { transform: translateY(-50px); opacity: 0.2; }
-      50% { opacity: 0.8; }
-      100% { transform: translateY(380px); opacity: 0.2; }
-    }
-    @keyframes pulse-node {
-      0%, 100% { transform: scale(1); opacity: 0.6; }
-      50% { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 10px #00f2fe); }
-    }
-    @keyframes float-particle {
-      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
-      50% { transform: translateY(-15px) translateX(10px); opacity: 0.9; }
-      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
-    }
-    @keyframes dash-flow {
-      to { stroke-dashoffset: -40; }
-    }
-    .grid-line { stroke: #1e293b; stroke-width: 1; opacity: 0.4; }
-    .scan-line { stroke: url(#cyan-glow); stroke-width: 2; animation: scan-beam 6s ease-in-out infinite; }
-    .connecting-line { stroke: #334155; stroke-width: 1.5; stroke-dasharray: 6 6; animation: dash-flow 4s linear infinite; }
-    .pulse-point { animation: pulse-node 3s ease-in-out infinite; transform-origin: center; }
-    .particle { animation: float-particle 5s ease-in-out infinite; }
-    .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #ffffff; }
-    .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #94a3b8; }
-    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; fill: #00f2fe; }
-  </style>
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
 
-  <!-- Background Layer -->
-  <rect width="1200" height="360" fill="url(#bg-grad)" rx="16" />
+  <!-- Background Grid Pattern -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
 
-  <!-- Background Grid Network -->
-  <g class="grid-layer">
-    <line x1="0" y1="60" x2="1200" y2="60" class="grid-line" />
-    <line x1="0" y1="120" x2="1200" y2="120" class="grid-line" />
-    <line x1="0" y1="180" x2="1200" y2="180" class="grid-line" />
-    <line x1="0" y1="240" x2="1200" y2="240" class="grid-line" />
-    <line x1="0" y1="300" x2="1200" y2="300" class="grid-line" />
-    
-    <line x1="150" y1="0" x2="150" y2="360" class="grid-line" />
-    <line x1="350" y1="0" x2="350" y2="360" class="grid-line" />
-    <line x1="550" y1="0" x2="550" y2="360" class="grid-line" />
-    <line x1="750" y1="0" x2="750" y2="360" class="grid-line" />
-    <line x1="950" y1="0" x2="950" y2="360" class="grid-line" />
-    <line x1="1150" y1="0" x2="1150" y2="360" class="grid-line" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="350" y1="0" x2="350" y2="360" />
+    <line x1="550" y1="0" x2="550" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="950" y1="0" x2="950" y2="360" />
+    <line x1="1150" y1="0" x2="1150" y2="360" />
   </g>
 
-  <!-- Animated Scan Beam (Background Effect) -->
-  <line x1="0" y1="0" x2="1200" y2="0" class="scan-line" filter="url(#glow)" />
-
-  <!-- Flowing Network Connection Lines -->
-  <path d="M 850 90 L 980 150 L 1080 100" class="connecting-line" />
-  <path d="M 980 150 L 1050 250" class="connecting-line" />
-  <path d="M 850 240 L 980 150" class="connecting-line" />
-
-  <!-- Floating Data Node Circles (Background Dynamic Elements) -->
-  <g class="particle" style="animation-delay: 0s;">
-    <circle cx="850" cy="90" r="6" fill="#00f2fe" class="pulse-point" />
-    <circle cx="850" cy="90" r="14" fill="none" stroke="#00f2fe" stroke-opacity="0.4" />
-  </g>
-  <g class="particle" style="animation-delay: 1s;">
-    <circle cx="980" cy="150" r="9" fill="#7f00ff" class="pulse-point" />
-    <circle cx="980" cy="150" r="20" fill="none" stroke="#e100ff" stroke-opacity="0.3" />
-  </g>
-  <g class="particle" style="animation-delay: 2s;">
-    <circle cx="1080" cy="100" r="5" fill="#38bdf8" class="pulse-point" />
-  </g>
-  <g class="particle" style="animation-delay: 1.5s;">
-    <circle cx="1050" cy="250" r="7" fill="#00f2fe" class="pulse-point" />
-  </g>
-  <g class="particle" style="animation-delay: 0.5s;">
-    <circle cx="850" cy="240" r="6" fill="#c084fc" class="pulse-point" />
+  <!-- Flowing Network Graph Lines (Right Side Data Security Topology) -->
+  <g stroke="#334155" stroke-width="1.5" stroke-dasharray="6 6" fill="none">
+    <path d="M 820 100 L 960 160 L 1080 110" />
+    <path d="M 960 160 L 1040 260" />
+    <path d="M 820 250 L 960 160" />
   </g>
 
-  <!-- Decorative Security Shield Graphics (Right Side Foreground Accent) -->
-  <g transform="translate(950, 160)" opacity="0.85">
-    <!-- Outer Glowing Shield Contour -->
-    <path d="M 0 -60 L 50 -35 V 20 C 0 60 -50 60 -50 20 V -35 Z" fill="url(#shield-grad)" stroke="#00f2fe" stroke-width="2.5" filter="url(#subtle-glow)" />
-    <!-- Lock Core Icon inside Shield -->
-    <rect x="-12" y="-5" width="24" height="20" rx="4" fill="#ffffff" />
-    <path d="M -7 -5 V -13 A 7 7 0 0 1 7 -13 V -5" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
+  <!-- Network Graph Data Nodes -->
+  <g>
+    <!-- Node 1 -->
+    <circle cx="820" cy="100" r="6" fill="#00f2fe" />
+    <circle cx="820" cy="100" r="14" fill="none" stroke="#00f2fe" stroke-opacity="0.4" stroke-width="1.5" />
+
+    <!-- Node 2 (Center) -->
+    <circle cx="960" cy="160" r="9" fill="#7f00ff" />
+    <circle cx="960" cy="160" r="22" fill="none" stroke="#e100ff" stroke-opacity="0.3" stroke-width="1.5" />
+
+    <!-- Node 3 -->
+    <circle cx="1080" cy="110" r="6" fill="#38bdf8" />
+
+    <!-- Node 4 -->
+    <circle cx="1040" cy="260" r="7" fill="#00f2fe" />
+
+    <!-- Node 5 -->
+    <circle cx="820" cy="250" r="6" fill="#c084fc" />
   </g>
 
-  <!-- Dynamic Security Pill Badges (Positioned Safely below Subtitle) -->
-  <g transform="translate(60, 275)">
+  <!-- Security Shield Vector Symbol (Right Side Accent) -->
+  <g transform="translate(960, 160)" opacity="0.9">
+    <!-- Outer Shield Frame -->
+    <path d="M 0 -65 L 55 -38 V 22 C 0 65 -55 65 -55 22 V -38 Z" fill="url(#shield-grad)" stroke="#00f2fe" stroke-width="2.5" filter="url(#subtle-glow)" />
+    <!-- Lock Core Icon -->
+    <rect x="-14" y="-5" width="28" height="22" rx="4" fill="#ffffff" />
+    <path d="M -8 -5 V -14 A 8 8 0 0 1 8 -14 V -5" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Category Badges (Bottom Left Overlay) -->
+  <g transform="translate(60, 280)">
+    <!-- Pill 1: DSPM Core -->
     <rect x="0" y="0" width="130" height="32" rx="16" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5" />
-    <text x="65" y="20" class="badge-text" text-anchor="middle">🛡️ DSPM Core</text>
+    <text x="65" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#00f2fe" text-anchor="middle">DSPM Core</text>
 
-    <rect x="145" y="0" width="160" height="32" rx="16" fill="#1e293b" stroke="#7f00ff" stroke-width="1.5" />
-    <text x="225" y="20" class="badge-text" text-anchor="middle" fill="#e100ff">🔍 Data Discovery</text>
+    <!-- Pill 2: Data Discovery -->
+    <rect x="145" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#7f00ff" stroke-width="1.5" />
+    <text x="220" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#e100ff" text-anchor="middle">Data Discovery</text>
 
-    <rect x="320" y="0" width="160" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
-    <text x="400" y="20" class="badge-text" text-anchor="middle" fill="#38bdf8">🏷️ Classification</text>
+    <!-- Pill 3: Classification -->
+    <rect x="310" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="385" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#38bdf8" text-anchor="middle">Classification</text>
 
-    <rect x="495" y="0" width="160" height="32" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
-    <text x="575" y="20" class="badge-text" text-anchor="middle" fill="#10b981">🔐 Governance</text>
+    <!-- Pill 4: Governance -->
+    <rect x="475" y="0" width="140" height="32" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+    <text x="545" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#10b981" text-anchor="middle">Governance</text>
   </g>
 
-  <!-- FOREGROUND TEXT LAYER (Prominent, High Contrast & Never Obstructed) -->
-  <g transform="translate(60, 110)">
+  <!-- Main Title & Text Overlay (High Contrast Foreground) -->
+  <g transform="translate(60, 105)">
     <!-- Top Category Tag -->
     <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" fill="#00f2fe" letter-spacing="2">CURATED SECURITY ECOSYSTEM</text>
     
-    <!-- Main Title -->
-    <text x="0" y="48" class="title-text" font-size="38" filter="url(#subtle-glow)">Awesome Data Security Posture</text>
-    <text x="0" y="92" class="title-text" font-size="38" fill="url(#cyan-glow)">Management (DSPM)</text>
+    <!-- Main Title Line 1 -->
+    <text x="0" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="38" fill="#ffffff" filter="url(#subtle-glow)">Awesome Data Security Posture</text>
+    
+    <!-- Main Title Line 2 -->
+    <text x="0" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="38" fill="url(#cyan-glow)">Management (DSPM)</text>
     
     <!-- Subtitle -->
-    <text x="0" y="132" class="subtitle-text" font-size="16">Top SaaS Platforms & Open-Source Projects for Cloud Sensitive Data Security</text>
+    <text x="0" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="16" fill="#94a3b8">Top SaaS Platforms &amp; Open-Source Projects for Cloud Sensitive Data Security</text>
   </g>
 </svg>
